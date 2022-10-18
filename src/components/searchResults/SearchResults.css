@@ -1,0 +1,14 @@
+.searchResults {
+    display: flex;
+    align-items: center;
+    justify-content: first baseline;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.searchResultsTitle {
+    color: white;
+    width: 80%;
+    margin: 20px auto;
+}

@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .footer {
     display: flex;
     align-items: center;
@@ -7,9 +6,10 @@
     flex-direction: column;
 }
 
-a{
-    color : rgb(255, 255, 255)
-=======
+a {
+    color: rgb(255, 255, 255);
+}
+
 .footer {
     display: flex;
     align-items: center;
@@ -18,7 +18,6 @@ a{
     flex-direction: column;
 }
 
-a{
-    color : rgb(255, 255, 255)
->>>>>>> 05a5e51adab697b0d253337c712e4e2bb60010fa
+a {
+    color: rgb(255, 255, 255)
 }

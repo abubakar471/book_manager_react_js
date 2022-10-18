@@ -11,8 +11,4 @@ const Footer = () => {
     )
 }
 
-<<<<<<< HEAD
 export default Footer;
-=======
-export default Footer;
->>>>>>> 05a5e51adab697b0d253337c712e4e2bb60010fa

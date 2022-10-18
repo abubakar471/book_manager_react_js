@@ -7,6 +7,8 @@ import EditBook from '../components/editBook/EditBook';
 import useLocalStorage from '../components/hooks/useLocalStorage';
 import BooksContext from '../context/BooksContext';
 import Footer from '../components/footer/Footer';
+import SearchResults from '../components/searchResults/SearchResults';
+
 const AppRouter = () => {
     const [books, setBooks] = useLocalStorage('books', []);
 
@@ -29,6 +31,11 @@ const AppRouter = () => {
                         <Route
                             element={<EditBook />}
                             path="/edit/:id"
+                            exact
+                        />
+                        <Route
+                            element={<SearchResults />}
+                            path="/search/:query"
                             exact
                         />
                         <Route path="*" element={<Navigate to="/" />} />

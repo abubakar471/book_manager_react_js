@@ -9,6 +9,7 @@ const BooksList = () => {
     const handleRemoveBook = (id) => {
         setBooks(books.filter((book) => book.id !== id));
     };
+    
     return (
         <>
             <div className="bookList">
