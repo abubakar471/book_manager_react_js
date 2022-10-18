@@ -1,0 +1,26 @@
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+hr {
+    color: white;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.headerTitle {
+    color: white;
+}
+
+.link {
+    padding: 10px;
+    margin: 10px;
+    background-color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    color: rgb(14, 97, 192);
+}

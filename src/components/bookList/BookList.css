@@ -1,0 +1,12 @@
+.bookList {
+    width: 80%;
+    margin: 20px auto;
+    color: white;
+}
+
+.booksContainer {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: first baseline;
+}
