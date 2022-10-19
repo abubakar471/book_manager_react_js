@@ -5,7 +5,9 @@ import SearchBar from "../searchBar/SearchBar";
 const Header = () => {
     return (
         <header>
-            <h1 className="headerTitle">💬 Book Management</h1>
+            <h1 className="headerTitle">
+                <Link to="/" className="titleLink" style={{ textDecoration: "none" }}>💬 Book Management</Link>
+            </h1>
             <SearchBar />
             <hr />
             <div className="links">

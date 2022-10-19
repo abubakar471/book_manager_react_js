@@ -15,25 +15,34 @@ const SearchResults = () => {
 
 
     useEffect(() => {
-        setFilteredBooks(books.filter(book => {
-            return book.bookname.toLowerCase().includes(query.toLowerCase());
-        }))
-    }, [query, books])
+        if (query.length > 0) {
+            setFilteredBooks(books.filter(book => {
+                return book.bookname
+                    .toLowerCase()
+                    .replace(/\s/g, '')
+                    .includes(query.toLowerCase().replace(/\s/g, '')) ||
+                    book.author
+                        .toLowerCase()
+                        .replace(/\s/g, '')
+                        .includes(query.toLowerCase().replace(/\s/g, ''))
+            }))
+        }
+    }, [query, books]);
     return (
         <>
-        <div className="searchResultsTitle">
-        <h2>{filteredBooks.length !== 0 ?
+            <div className="searchResultsTitle">
+                <h2>{filteredBooks.length !== 0 ?
                     "Showing Results " + filteredBooks.length + " out of " + books.length :
                     ""
                 }</h2>
-        </div>
+            </div>
             <div className="searchResults">
-                {!_.isEmpty(books) ? (
+                {!_.isEmpty(filteredBooks) ? (
                     filteredBooks.map((book) => (
                         <Book key={book.id} {...book} handleRemoveBook={handleRemoveBook} />
                     ))
                 ) : (
-                    <p className="message">Nothing Matches Your Search.</p>
+                    <p className="message">Nothing Matches Your Search !</p>
                 )}
             </div>
         </>

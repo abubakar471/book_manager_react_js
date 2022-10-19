@@ -12,3 +12,8 @@
     width: 80%;
     margin: 20px auto;
 }
+
+.message {
+    color: white;
+    font-size: 20px;
+}

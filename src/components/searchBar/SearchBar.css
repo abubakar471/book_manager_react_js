@@ -42,6 +42,11 @@
     position: relative;
     left: -63px;
     right: 30px;
+    cursor : pointer;
+}
+
+.searchBtn{
+    outline : none;
 }
 
 @media only screen and (max-width : 640px) {
